@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+}
+
+.text{
+    background-color: rgba(0, 0, 255, 0.363);
+    padding: 5px !important;
+
+    margin-bottom: 2rem;
+}
+
+.navbar-toggler{
+    background-color: #ffffff !important;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-top: 2px solid #fff;
+}
+
+footer h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer p, footer ul {
+    font-size: 0.9rem;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color: #ffc107; /* Жовтий колір */
+}
+
+.row .col-md-4 .card {
+    margin-bottom: 1.2rem;
+}
+
+.card{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.card img{
+    width: 250px;
+    height: 200px;
+}
