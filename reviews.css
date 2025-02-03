@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+}
+
+.text{
+    background-color: rgba(0, 0, 255, 0.363);
+    padding: 5px !important;
+
+    margin-bottom: 2rem;
+}
+
+.navbar-toggler{
+    background-color: #ffffff !important;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-top: 2px solid #fff;
+}
+
+footer h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer p, footer ul {
+    font-size: 0.9rem;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color: #ffc107; /* Жовтий колір */
+}
+
+    .testimonial-block {
+        background-color: rgba(0, 0, 0, 0.7); /* Напівпрозорий фон */
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+    }
+    .testimonial-block:hover {
+        transform: scale(1.05); /* Анімація при наведенні */
+    }
+    .testimonial-text {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    .blockquote-footer {
+        color: #f8d866; /* Яскравий колір для імен */
+        font-style: italic;
+    }
