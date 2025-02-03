@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css"/>
+        <title>Піцерія</title>
+        <style>
+            body {
+                background-image: url('https://img.wallscloud.net/uploads/thumb/488368191/2019000000033-1024x576-MT-80.webp'); /* зимове зображення */
+                background-size: cover;
+                background-attachment: fixed;
+                color: #fff;
+            }
+            .navbar {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            .card {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 2px solid #fff;
+                border-radius: 15px;
+            }
+            .card-title {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
+            .snowflake {
+                position: absolute;
+                color: #fff;
+                font-size: 24px;
+                animation: snow 10s linear infinite;
+            }
+            @keyframes snow {
+                0% { transform: translateY(-10vh); }
+                100% { transform: translateY(110vh); }
+            }
+            .snowflake:nth-child(odd) {
+                animation-duration: 7s;
+            }
+            /* Set a consistent size for all pizza images */
+            .card-img-top {
+                width: 100%;
+                height: 200px; /* Fixed height for images */
+                object-fit: cover; /* Ensures images cover the space without stretching */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Сніжинки -->
+        <div class="snowflake" style="left: 10%;">❄</div>
+        <div class="snowflake" style="left: 30%;">❄</div>
+        <div class="snowflake" style="left: 50%;">❄</div>
+        <div class="snowflake" style="left: 70%;">❄</div>
+        <div class="snowflake" style="left: 90%;">❄</div>
+        <div class="snowflake" style="left: 20%;">❄</div>
+        <div class="snowflake" style="left: 40%;">❄</div>
+        <div class="snowflake" style="left: 60%;">❄</div>
+        <div class="snowflake" style="left: 80%;">❄</div>
+         <!-- Навігаційна панель -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">ПІЦЕРІЯ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="reviews.html">Відгуки</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Секція Піцерія -->
+        <div class="container my-5">
+          <div class="text">
+            <h1 class="text-center mb-1">Ласкаво просимо до нашої піцерії!</h1>
+            <p class="text-center mb-1">У нас ви знайдете найсмачніші піци з натуральними інгредієнтами.</p>
+          </div>
+            <div class="row">
+                <!-- Картки піци -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://lh3.googleusercontent.com/-F7-f2RyixFJ_0-MIGehlz7lp08CkWuy7Y64qDx8zcSrAyHA_uWVnJx1XOVAHg_qoFD7fW34aWScKlOz7tlHx8LeBxDoB64vaZ6LCKKMAPPnr8-QTpPpQVVK-xGPWFZomSVkVZXW" class="card-img-top" alt="Маргарита">
+                        <div class="card-body">
+                            <h5 class="card-title">Піца Маргарита</h5>
+                            <p class="card-text">Традиційна піца з томатами, моцарелою та базиліком.</p>
+                            <button class="btn btn-primary">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Інші картки -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://terramare.vn.ua/wp-content/uploads/2020/11/pizza-cheeze-news.png" class="card-img-top" alt="Пепероні">
+                        <div class="card-body">
+                            <h5 class="card-title">Піца Пепероні</h5>
+                            <p class="card-text">Гостра піца з пепероні, сиром та соусом.</p>
+                            <button class="btn btn-primary">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- копіюємо -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://adriano.com.ua/wp-content/uploads/2022/08/%D0%9F%D1%96%D1%86%D0%B0-4-%D1%81%D0%B8%D1%80%D1%83-%D1%8F%D0%BA-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE-%D0%B7%D1%80%D0%BE%D0%B1%D0%B8%D1%82%D0%B8-%D1%81%D0%BC%D0%B0%D1%87%D0%BD%D1%83-%D1%81%D1%82%D1%80%D0%B0%D0%B2%D1%83.png" class="card-img-top" alt="Чотири сири">
+                        <div class="card-body">
+                            <h5 class="card-title">Піца Чотири сири</h5>
+                            <p class="card-text">Сирна насолода з моцарелою, горгонзолою, пармезаном.</p>
+                            <button class="btn btn-primary">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- копіюємо -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://ecopizza.com.ua/557-large_default/pica-vegetarianska.jpg" class="card-img-top" alt="Чотири сири">
+                        <div class="card-body">
+                            <h5 class="card-title">Вегетаріанська піца</h5>
+                            <p class="card-text">Овочі, помідори, перець, оливки, гриби.</p>
+                            <button class="btn btn-primary">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- копіюємо -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://veteranopizza.com/public/uploads/site_catalog/original_0c99f8416f7518de3b4e7f57edddb1ac.webp" alt="Чотири сири">
+                        <div class="card-body">
+                            <h5 class="card-title">Піца Медово Цибулева</h5>
+                            <p class="card-text">Піца з медом, сиром, куркою та овочами.</p>
+                            <button class="btn btn-primary">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- копіюємо -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://mrgrill.ua/storage/products/images/medium/nwWaudW7wv4Aq8RFvCW3BQDY9qRsvNbKIQKmFerr.jpg?v=1722513417" alt="Чотири сири">
+                        <div class="card-body">
+                            <h5 class="card-title">Піца м'ясна</h5>
+                            <p class="card-text">
+Соковите м'ясо, сири, томатний соус, спеції.</p>
+                            <button class="btn btn-primary">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container ">
+            <div class="row text-center text-md-start align-items-center">
+                <!-- Ліва частина футера -->
+                <div class="col-md-4 mb-5">
+                    <h5>Про нас</h5>
+                    <p>Ми пропонуємо найкращі піци у місті, приготовані з любов’ю та натуральними інгредієнтами.</p>
+                </div>
+
+                <!-- Середня частина футера -->
+                <div class="col-md-4 text-center  mb-5">
+                    <h5>Навігація</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Головна</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Меню</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Про нас</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <!-- Права частина футера -->
+                <div class="col-md-4 text-center mb-5">
+                    <h5>Контакти</h5>
+                    <p><i class="bi bi-telephone-fill"></i> +380 98 765 43 21</p>
+                    <p><i class="bi bi-envelope-fill"></i> info@pizza.com</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> вул. Центральна, 123, Київ</p>
+                </div>
+            </div>
+
+            <!-- Нижня частина футера -->
+            <div class="text-center mt-3">
+                <p>&copy; 2025 Піцерія. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
